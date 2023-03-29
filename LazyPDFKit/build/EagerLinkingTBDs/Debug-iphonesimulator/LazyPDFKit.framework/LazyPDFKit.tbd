@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/LazyPDFKit.framework/LazyPDFKit'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    symbols:         [ _CGPDFDocumentCreateUsingData, _CGPDFDocumentCreateUsingUrl, 
+                       _CGPDFDocumentDataNeedsPassword, _CGPDFDocumentUrlNeedsPassword, 
+                       _HSVtoRGB, _LazyPDFKitVersionNumber, _LazyPDFKitVersionString, 
+                       _RGBToHSV, _createHSVBarContentImage, _createSaturationBrightnessSquareContentImageWithHue, 
+                       _logDictionaryEntry, _midPoint, _pin ]
+    objc-classes:    [ Annotation, DocumentOutlineEntry, File, LazyPDFColorBarPicker, 
+                       LazyPDFColorBarView, LazyPDFColorIndicatorView, LazyPDFColorPickerController, 
+                       LazyPDFColorPickerNavigationController, LazyPDFColorSquarePicker, 
+                       LazyPDFColorSquareView, LazyPDFContentPage, LazyPDFContentThumb, 
+                       LazyPDFContentTile, LazyPDFContentView, LazyPDFDataManager, 
+                       LazyPDFDocument, LazyPDFDocumentLink, LazyPDFDocumentOutline, 
+                       LazyPDFDrawToolbar, LazyPDFDrawingEllipseTool, LazyPDFDrawingEraserTool, 
+                       LazyPDFDrawingLineTool, LazyPDFDrawingPenTool, LazyPDFDrawingRectangleTool, 
+                       LazyPDFDrawingTextTool, LazyPDFDrawingView, LazyPDFMainPagebar, 
+                       LazyPDFMainToolbar, LazyPDFPagebarShadow, LazyPDFPagebarThumb, 
+                       LazyPDFPopoverController, LazyPDFPopoverView, LazyPDFPropertyController, 
+                       LazyPDFSourceColorView, LazyPDFThumbCache, LazyPDFThumbFetch, 
+                       LazyPDFThumbOperation, LazyPDFThumbQueue, LazyPDFThumbRender, 
+                       LazyPDFThumbRequest, LazyPDFThumbView, LazyPDFThumbsView, 
+                       LazyPDFTouchView, LazyPDFTrackControl, LazyPDFViewController, 
+                       ThumbsMainToolbar, ThumbsPageThumb, ThumbsViewController, 
+                       UIXToolbarShadow, UIXToolbarView ]
+    objc-ivars:      [ LazyPDFDrawingPenTool.path, LazyPDFPopoverController._parentView, 
+                       LazyPDFThumbView.imageView, LazyPDFTouchView._insideBlock, 
+                       LazyPDFTouchView._outsideBlock ]
+...

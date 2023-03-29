@@ -1,0 +1,43 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "679ff938dfde365ce6b47eb4d146ea4e14052ae4a6da0c785bf68565e810340e"
+    }
+  ],
+  "containerPath" : "/Users/lexuanquynh/coding/others/LazyPDFKit/LazyPDFKit.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "BUILD_DIR" : "/Users/lexuanquynh/Library/Developer/Xcode/DerivedData/LazyPDFKit-budpixsbrdcyiqaetqwofggarhwv/Build/Products",
+          "BUILD_ROOT" : "/Users/lexuanquynh/Library/Developer/Xcode/DerivedData/LazyPDFKit-budpixsbrdcyiqaetqwofggarhwv/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphoneos16.4",
+          "TOOLCHAINS" : "com.apple.dt.toolchain.XcodeDefault"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      },
+      "toolchainOverride" : "com.apple.dt.toolchain.XcodeDefault"
+    }
+  },
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
