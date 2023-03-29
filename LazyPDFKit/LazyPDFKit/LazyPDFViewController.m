@@ -386,7 +386,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     mainToolbar.delegate = self; // LazyPDFMainToolbarDelegate
     [self.view addSubview:mainToolbar];
     
-    CGRect drawbarRect = CGRectMake(10, viewRect.origin.y+TOOLBAR_HEIGHT+10, DRAWBAR_WIDTH, DRAWBAR_HEIGHT);
+    CGRect drawbarRect = CGRectMake(10, viewRect.origin.y+TOOLBAR_HEIGHT+100, DRAWBAR_WIDTH, DRAWBAR_HEIGHT);
     drawToolbar = [[LazyPDFDrawToolbar alloc] initWithFrame:drawbarRect document:document]; // LazyPDFMainToolbar
     drawToolbar.delegate = self; // LazyPDFDrawToolbarDelegate
     [self.view addSubview:drawToolbar];

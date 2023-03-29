@@ -13,7 +13,7 @@ class LazyPaintViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        openLazyPDF()
+        
     }
 
     private func openLazyPDF() {
@@ -30,12 +30,18 @@ class LazyPaintViewController: UIViewController {
             guard let lazyPDFViewController = LazyPDFViewController(lazyPDFDocument: document) else {
                 return
             }
-            lazyPDFViewController.delegate = self // Set the LazyPDFViewController delegate to self
+            lazyPDFViewController.delegate = self
+            lazyPDFViewController.modalPresentationStyle = .overFullScreen
             self.navigationController?.pushViewController(lazyPDFViewController, animated: true)
         } else { // Log an error so that we know that something went wrong
             
         }
     }
+    
+    @IBAction func onOpenPDF(_ sender: Any) {
+        openLazyPDF()
+    }
+    
 }
 
 
